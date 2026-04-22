@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Painel Stellarium</title>
+
+<style>
+body {
+    background: #0b0f1a;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 220px;
+}
+
+.on { background: #2ecc71; }
+.off { background: #e74c3c; }
+</style>
+</head>
+
+<body>
+
+<h1>🌌 Controle Stellarium</h1>
+
+<form method="post" action="/acao">
+
+<button name="acao" value="atmos_on" class="on">Atmosfera ON</button>
+<button name="acao" value="atmos_off" class="off">Atmosfera OFF</button><br>
+
+<button name="acao" value="land_on" class="on">Paisagem ON</button>
+<button name="acao" value="land_off" class="off">Paisagem OFF</button><br>
+
+<button name="acao" value="const_on" class="on">Constelações ON</button>
+<button name="acao" value="const_off" class="off">Constelações OFF</button><br>
+
+<button name="acao" value="time_forward">⏩ Tempo +</button>
+<button name="acao" value="time_pause">⏸ Pausar</button>
+<button name="acao" value="time_back">⏪ Tempo -</button><br>
+<h3>Digite o Corpo Celestre:</h3><br>
+<input  name = "acao" type = "text" value="corpo_celeste" ><br>
+
+<button name="acao" value="modo_palestra">🎤 Modo Palestra</button>
+
+</form>
+
+</body>
+</html>
