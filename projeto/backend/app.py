@@ -43,7 +43,7 @@ button {
 
 <body>
 
-<h1>🌌 Controle Stellarium</h1>
+<h1>Controle Stellarium</h1>
 
 <form method="post" action="/acao">
 
@@ -55,6 +55,12 @@ button {
 
 <button name="acao" value="const_on" class="on">Constelações ON</button>
 <button name="acao" value="const_off" class="off">Constelações OFF</button><br>
+
+<button name="acao" value="art_constelation_on" class="on"> Desenho das Constelações ON</button>
+<button name="acao" value="art_constelation_off" class="off">Desenho das Constelações OFF</button><br>
+
+<button name="acao" value="name_constelation_on" class="on"> Nome das Constelações ON</button>
+<button name="acao" value="name_constelation_off" class="off">Nome das Constelações OFF</button><br>
 
 <button name="acao" value="time_forward">⏩ Tempo +</button>
 <button name="acao" value="time_pause">⏸ Pausar</button>
@@ -119,6 +125,17 @@ def acao():
 
     elif acao == "time_back":
         requests.post(f"{STELLARIUM_URL}/api/main/time", data={"timerate": "-100"})
+
+    elif acao == "art_constelation_on":
+        set_prop("ConstellationMgr.artDisplayed" , "true")
+
+    elif acao == "art_constelation_off":
+        set_prop("ConstellationMgr.artDisplayed" , "false")
+
+    elif acao == "name_constelation_on":
+        set_prop("ConstellationMgr.namesDisplayed" , "true")
+    elif acao == "name_constelation_off":
+        set_prop("ConstellationMgr.namesDisplayed" , "false")
 
     elif acao == "modo_palestra":
         set_prop("StelSkyDrawer.flagAtmosphere", "false")
