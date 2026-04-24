@@ -53,6 +53,11 @@ Criar uma base para:
 
 ---
 
+## O que colocar no terminal?
+
+1. cd C:\Users\sa_salainterativa\Desktop\projeto\backend
+2. python app.py
+
 ## 🌐 Testando a Conexão
 
 Acesse no navegador:
