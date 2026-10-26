@@ -16,7 +16,6 @@ Este projeto tem como objetivo testar a integração entre Python e o Stellarium
 
 Funcionalidades testadas:
 - 🌍 Focar em corpos celestes  
-- ⏩ Acelerar o tempo  
 - ⭐ Exibir constelações  
 
 ---
@@ -26,7 +25,6 @@ Funcionalidades testadas:
 Criar uma base para:
 - Apresentações interativas (planetário)  
 - Automação de simulações astronômicas  
-- Desenvolvimento futuro de interfaces  
 
 ---
 
@@ -52,12 +50,3 @@ Criar uma base para:
 6. Salve e reinicie  
 
 ---
-
-## O que colocar no terminal?
-
-1. cd C:\Users\sa_salainterativa\Desktop\projeto\backend
-2. python app.py
-
-## 🌐 Testando a Conexão
-
-Acesse no navegador:
